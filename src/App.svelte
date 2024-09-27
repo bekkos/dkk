@@ -16,30 +16,32 @@
 
   document.body.onscroll = () => {
     t = Math.abs(document.body.getBoundingClientRect().top);
-    let video = document.getElementsByTagName("video")[0]
-    if(video instanceof HTMLVideoElement) {
-      video.hidden = false;
-      switch(video.id) {
-        case "v0":
-          playOnScroll(video, document, t, 0, 5);
-          break;
-        case "v1":
-          playOnScroll(video, document, t, 5000, 5);
-          break;
-        default: // no video
-          break; // do nothing
-      }
-    }
+    console.log(t)
+    let videos = document.getElementsByTagName("video");
+    let videoArray = [...videos]
+    videoArray.forEach((video: HTMLVideoElement) => {
+        video.hidden = false;
+        switch(video.id) {
+          case "v0": // Intro sequence
+            playOnScroll(video, document, t, 0, 1);
+            break;
+          case "v1": // CarSticker
+            playOnScroll(video, document, t, 2500, 2);
+            break;
+          default: // no video
+            break; // do nothing
+        }
+    });
   }
 
 </script>
 
 <main>
   <Wrapper>
-    {#if t < 5000}
+    {#if t < 4000}
         <Intro />
-      {:else if t >= 5000 && t < 10000}
-        <Video2 />
+      {:else if t >= 4000 && t < 10000}
+        <div></div>
     {/if}
     <Section1 />
   </Wrapper>
