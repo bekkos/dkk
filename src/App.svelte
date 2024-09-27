@@ -28,7 +28,7 @@
             playOnScroll(video, document, page, 0, 1);
             break;
           case "v1": // CarSticker
-            playOnScroll(video, document, page, 2500, 2);
+            playOnScroll(video, document, page, 2000, 3);
             break;
           default: // no video
             break; // do nothing
