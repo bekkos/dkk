@@ -17,8 +17,15 @@
       <track kind="captions" />
     </video>
   </div>
-  <div class="bg-[black] h-[120vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
+  <div class="bg-[black] h-[75vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
     <p data-aos="fade-right" class="mt-[25vh] text-center">men, den kalde krigen ligger over Europa som et tykt snølag.</p>
+  </div>
+  <div class="bg-[black] h-[150vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
+    <p data-aos="fade-right" class="text-center">Dette er en helt ny type krigsføring. Ingen bomber, ingen skudd.</p>
+    <p data-aos="fade-left" class="w-full text-center" data-aos-delay="500" style="float: right; margin-top: 10vh">Trusler, informasjon og innflytelse er det som gjelder.</p>
+    <video class="mt-12" id="v2" src="./videos/spy_stickers.mp4" style="float: right">
+      <track kind="captions" />
+    </video>
   </div>
 </section>
 

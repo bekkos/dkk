@@ -23,12 +23,16 @@
     let videoArray = [...videos]
     videoArray.forEach((video: HTMLVideoElement) => {
         video.hidden = false;
+        video.loop = true;
         switch(video.id) {
           case "v0": // Intro sequence
             playOnScroll(video, document, page, 0, 1);
             break;
           case "v1": // CarSticker
             playOnScroll(video, document, page, 2000, 3);
+            break;
+          case "v2": // SpyStickers
+            playOnScroll(video, document, page, 3500, 2);
             break;
           default: // no video
             break; // do nothing
