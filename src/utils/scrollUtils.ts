@@ -1,6 +1,7 @@
 
 
-export const playOnScroll = (video: HTMLVideoElement, document: Document, t: number, startT: number, speed: number) => {
+export const playOnScroll = (video: HTMLVideoElement, document: Document, page: number, startT: number, speed: number) => {
+    let t = page * 1000;
     const videoDuration = video.duration;
     const maxScroll = 1000;
     if(t >= startT) {

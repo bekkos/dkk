@@ -13,20 +13,22 @@
     AOS.init()
   })
   var t = 0;
+  var page = 0;
 
   document.body.onscroll = () => {
     t = Math.abs(document.body.getBoundingClientRect().top);
-    console.log(t)
+    page = t / 1000;
+    console.log(t, page)
     let videos = document.getElementsByTagName("video");
     let videoArray = [...videos]
     videoArray.forEach((video: HTMLVideoElement) => {
         video.hidden = false;
         switch(video.id) {
           case "v0": // Intro sequence
-            playOnScroll(video, document, t, 0, 1);
+            playOnScroll(video, document, page, 0, 1);
             break;
           case "v1": // CarSticker
-            playOnScroll(video, document, t, 2500, 2);
+            playOnScroll(video, document, page, 2500, 2);
             break;
           default: // no video
             break; // do nothing
@@ -38,9 +40,9 @@
 
 <main>
   <Wrapper>
-    {#if t < 4000}
+    {#if page < 3.5}
         <Intro />
-      {:else if t >= 4000 && t < 10000}
+      {:else if t >= 3.5 && t < 10}
         <div></div>
     {/if}
     <Section1 />

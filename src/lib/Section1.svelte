@@ -10,21 +10,21 @@
     <p data-aos="fade-right" >Hangar 4 på Bodø flyplass er helt avsperret, ingen kommer inn.</p>
     <p data-aos="fade-left" data-aos-delay="500" style="float: right; margin-top: 10vh">Hva er det egentlig som foregår i den lille kystbyen i Nord-Norge?</p>
   </div>
-  <div class="bg-[black] h-[120vh] flex justify-start items-center flex-wrap flex-col">
+  <div class="bg-[black] h-[120vh] !w-full flex justify-start items-center flex-wrap flex-col">
     <p data-aos="fade-right" class="mt-[25vh]">60-tallet står om døren...</p>
     <p data-aos="fade-left" data-aos-delay="500" style="float: right; margin-top: 10vh">...det er en tydelig etterkrigsoptimisme i verden.</p>
     <video id="v1" src="./videos/car_sticker2.mp4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000" style="float: right">
       <track kind="captions" />
     </video>
   </div>
-<div class="bg-[black] h-[120vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
+  <div class="bg-[black] h-[120vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
     <p data-aos="fade-right" class="mt-[25vh]">men, den kalde krigen ligger over Europa som et tykt snølag.</p>
   </div>
 </section>
 
 <style>
   section {
-    width: 100vw;
+    width: 100%;
     height: 200vh;
     display: flex;
     justify-content: start;
