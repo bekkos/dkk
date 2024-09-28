@@ -1,11 +1,14 @@
 <script>
-  
+  export let page;
 </script>
 
-
-<video id="v0" src="./videos/u2air4.mp4">
-  <track kind="captions" />
-</video>
+{#if page >= 0 && page < 4.5}
+  <video id="v0" src="./videos/u2air4.mp4">
+    <track kind="captions" />
+  </video>
+  {:else}
+  <div></div>
+{/if}
 
 
 <style>
