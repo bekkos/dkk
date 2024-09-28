@@ -5,7 +5,7 @@
   import 'aos/dist/aos.css';
    // @ts-ignore
   import AOS from "aos";
-  import { getVideoSpeed, interpolateVideoTime, playOnScroll } from "./utils/scrollUtils";
+  import { getVideoLoop, getVideoScrollLength, getVideoSpeed, interpolateVideoTime, playOnScroll } from "./utils/scrollUtils";
   import { checkVisibleVideos } from "./utils/checkVisible";
   import type { IActiveVideo } from "./interfaces";
   import Foreground from "./lib/Foreground.svelte";
@@ -24,7 +24,7 @@
     console.log(page);
     let visibleVideos = checkVisibleVideos();
     visibleVideos.forEach((video: HTMLVideoElement) => {
-      video.loop = true;
+      video.loop = getVideoLoop(video.id) == 1 ? true : false;
       let exists = activeVideos.find((x: IActiveVideo) => x.video.id == video.id);
       let activeVideo: IActiveVideo | null = null;
       // Check if video has been added to the activeVideos
@@ -32,7 +32,7 @@
         // If not, add it
         activeVideo = {
           scrollStart: t,
-          scrollEnd: t + 5000,
+          scrollEnd: t + getVideoScrollLength(video.id),
           video: video
         } as IActiveVideo;
         activeVideos.push(activeVideo);

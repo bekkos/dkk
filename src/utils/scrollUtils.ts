@@ -21,8 +21,22 @@ export const getVideoSpeed = (id: string): number => {
     "v0" = 1,
     "v1" = 1,
     "v2" = 4,
-    "v3" = .5
+    "v3" = .5,
+    "v4" = 1
   }
-
   return videoSpeed[id as keyof typeof videoSpeed] ?? 1;
+}
+
+export const getVideoScrollLength = (id: string): number => {
+  enum videoScrollLength {
+    "v4" = 1250
+  }
+  return videoScrollLength[id as keyof typeof videoScrollLength] ?? 5000;
+}
+
+export const getVideoLoop = (id: string): number => {
+  enum videoLoop {
+    "v4" = 0
+  }
+  return videoLoop[id as keyof typeof videoLoop] ?? 1;
 }
