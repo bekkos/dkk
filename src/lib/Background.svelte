@@ -7,7 +7,7 @@
     <track kind="captions" />
   </video>
   {:else if page >= 3.8}
-  <video class="video" id="v3" src="./videos/r7_video.mp4">
+  <video class="video !w-[50%]" id="v3" src="./videos/r7_video.mp4">
     <track kind="captions" />
   </video>
   {:else}
@@ -31,7 +31,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 100%;
     height: 100%;
     object-fit: contain;
   }
