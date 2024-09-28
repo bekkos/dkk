@@ -1,6 +1,5 @@
 <script lang="ts">
   import Background from "./lib/Background.svelte";
-  import Section1 from "./lib/Section1.svelte";
   import Wrapper from "./lib/Wrapper.svelte";
   import { onMount } from 'svelte';
   import 'aos/dist/aos.css';
@@ -9,6 +8,7 @@
   import { getVideoSpeed, interpolateVideoTime, playOnScroll } from "./utils/scrollUtils";
   import { checkVisibleVideos } from "./utils/checkVisible";
   import type { IActiveVideo } from "./interfaces";
+  import Foreground from "./lib/Foreground.svelte";
 
   onMount(() => {
     AOS.init()
@@ -47,7 +47,7 @@
 <main>
   <Wrapper>
     <Background page={page} />
-    <Section1 />
+    <Foreground />
   </Wrapper>
 </main>
 

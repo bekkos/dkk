@@ -3,11 +3,12 @@
 </script>
 
 {#if page >= 0 && page < 4.5}
-  <video id="v0" src="./videos/u2air4.mp4">
+  <video class="video" id="v0" src="./videos/u2air4.mp4">
     <track kind="captions" />
   </video>
   {:else}
-  <div></div>
+  <div class="video">
+  </div>
 {/if}
 
 
@@ -22,7 +23,7 @@
     align-content: center;
   }
 
-  video {
+  .video {
     position: fixed;
     top: 0;
     left: 0;
