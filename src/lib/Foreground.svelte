@@ -1,7 +1,7 @@
 <script>
 </script>
 <section>
-  <h2 class="mt-[50vh] text-8xl">Bodø 1958</h2>
+  <h2 class="mt-[50vh] text-8xl">Bodø 1958 <small class="text-2xl"><br />Historien om en spionhovedstad.</small></h2>
   <div>
     <p data-aos="fade-right" >Det går rykter om mystiske "svarte fly" i luften over Bodø.</p>
     <p data-aos="fade-left" data-aos-delay="500" style="float: right; margin-top: 10vh">Ingen vet nøyaktig hva disse flyene er. Eller hva de gjør her.</p>
@@ -28,7 +28,7 @@
     </video>
   </div>
   <div class=" h-[40vh] flex justify-start items-center flex-wrap flex-col !mt-[25vh] !pr-[0]">
-    <p data-aos="fade-right" class="text-right !pr-[0]">Soviet Unionen skryter om at de produserer R7 atomraketter som pølser på samlebånd.</p>
+    <p data-aos="fade-right" class="text-right !pr-[0]">Soviet Unionen skryter av at de produserer R7 atomraketter som pølser på samlebånd.</p>
   </div>
   <div class="bg-[black] h-[130vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
     <p data-aos="fade-right" class="text-center text-3xl mt-[40vh]">Kan dette stemme?</p>
@@ -38,7 +38,7 @@
     <img width="50%" data-aos="fade-left" class="mt-[10vh]"  src="./images/nuclear_warning.jpg" alt="">
   </div>
   <div class="bg-[black] h-[150vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
-    <p data-aos="fade-right" class="text-center mt-[40vh]">President Eisenhower frykter et overraskelses-angrep så stort at USA ikke har evne til et tilsvarende motangrep.</p>
+    <p data-aos="fade-right" class="text-center mt-[40vh]">President Eisenhower frykter et overraskelsesangrep så stort at USA ikke har evne til et tilsvarende motangrep.</p>
     <video class="" id="v4" src="./videos/eisenhower.mp4">
       <track kind="captions" />
     </video>
