@@ -31,8 +31,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 </style>

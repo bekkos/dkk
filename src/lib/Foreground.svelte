@@ -27,8 +27,8 @@
       <track kind="captions" />
     </video>
   </div>
-  <div class=" h-[40vh] flex justify-start items-center flex-wrap flex-col !mt-[50vh]">
-    <p data-aos="fade-right" class="text-center">Soviet Unionen skryter om at de produserer R7 atomraketter som pølser på samlebånd.</p>
+  <div class=" h-[40vh] flex justify-start items-center flex-wrap flex-col !mt-[25vh] !pr-[0]">
+    <p data-aos="fade-right" class="text-right !pr-[0]">Soviet Unionen skryter om at de produserer R7 atomraketter som pølser på samlebånd.</p>
   </div>
   <div class="bg-[black] h-[130vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
     <p data-aos="fade-right" class="text-center text-3xl mt-[40vh]">Kan dette stemme?</p>
