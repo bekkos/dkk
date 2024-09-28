@@ -1,7 +1,7 @@
 <script>
 </script>
 <section>
-  <h2 style="margin-top: 50vh;">Bodø 1958</h2>
+  <h2 class="mt-[50vh] text-8xl">Bodø 1958</h2>
   <div>
     <p data-aos="fade-right" >Det går rykter om mystiske "svarte fly" i luften over Bodø.</p>
     <p data-aos="fade-left" data-aos-delay="500" style="float: right; margin-top: 10vh">Ingen vet nøyaktig hva disse flyene er. Eller hva de gjør her.</p>
