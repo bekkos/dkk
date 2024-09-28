@@ -7,7 +7,7 @@
     <track kind="captions" />
   </video>
   {:else if page >= 3.8}
-  <video class="video !w-[50%]" id="v3" src="./videos/r7_video.mp4">
+  <video class="video !w-[50%]" id="v3" src="./videos/r7_2.mp4">
     <track kind="captions" />
   </video>
   {:else}

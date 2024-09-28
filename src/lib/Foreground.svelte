@@ -33,11 +33,11 @@
   <div class="bg-[black] h-[130vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
     <p data-aos="fade-right" class="text-center text-3xl mt-[40vh]">Kan dette stemme?</p>
   </div>
-  <div class="bg-[black] h-[65vh] flex justify-center items-center flex-wrap flex-row !mt-[0]">
+  <div class="bg-[black] h-[65vh] flex justify-center items-center flex-wrap flex-col !mt-[0]">
     <p data-aos="fade-right" class="text-center">I USA vokser redselen. Hvis dette viser seg å være sant, ligger de dårlig an.</p>
     <img width="50%" data-aos="fade-left" class="mt-[10vh]"  src="./images/nuclear_warning.jpg" alt="">
   </div>
-  <div class="bg-[black] h-[150vh] flex justify-start items-center flex-wrap flex-row !mt-[0]">
+  <div class="bg-[black] h-[150vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
     <p data-aos="fade-right" class="text-center mt-[40vh]">President Eisenhower frykter et overraskelses-angrep så stort at USA ikke har evne til et tilsvarende motangrep.</p>
     <video class="" id="v4" src="./videos/eisenhower.mp4">
       <track kind="captions" />
