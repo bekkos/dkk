@@ -33,9 +33,9 @@
   <div class="bg-[black] h-[130vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
     <p data-aos="fade-right" class="text-center text-3xl mt-[40vh]">Kan dette stemme?</p>
   </div>
-  <div class="bg-[black] h-[40vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
-    <p data-aos="fade-right" class="text-left !pl-[0]">I USA vokser redselen. Hvis dette viser seg å være sant, ligger de dårlig an.</p>
-    <img width="50%" data-aos="fade-left" class="mt-[10vh] self-end"  src="./images/nuclear_warning.jpg" alt="">
+  <div class="bg-[black] h-[65vh] flex justify-center items-center flex-wrap flex-row !mt-[0]">
+    <p data-aos="fade-right" class="text-center">I USA vokser redselen. Hvis dette viser seg å være sant, ligger de dårlig an.</p>
+    <img width="50%" data-aos="fade-left" class="mt-[10vh]"  src="./images/nuclear_warning.jpg" alt="">
   </div>
 </section>
 
