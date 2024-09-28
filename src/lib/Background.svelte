@@ -2,8 +2,12 @@
   export let page;
 </script>
 
-{#if page >= 0 && page < 4.5}
+{#if page >= 0 && page < 3.8}
   <video class="video" id="v0" src="./videos/u2air4.mp4">
+    <track kind="captions" />
+  </video>
+  {:else if page >= 3.8}
+  <video class="video" id="v3" src="./videos/r7_video.mp4">
     <track kind="captions" />
   </video>
   {:else}

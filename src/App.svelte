@@ -21,6 +21,7 @@
   document.body.onscroll = () => {
     t = Math.abs(document.body.getBoundingClientRect().top);
     page = t / 1000;
+    console.log(page);
     let visibleVideos = checkVisibleVideos();
     visibleVideos.forEach((video: HTMLVideoElement) => {
       video.loop = true;

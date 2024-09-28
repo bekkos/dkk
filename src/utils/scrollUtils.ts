@@ -20,8 +20,9 @@ export const getVideoSpeed = (id: string): number => {
   enum videoSpeed {
     "v0" = 1,
     "v1" = 1,
-    "v2" = 4
+    "v2" = 4,
+    "v3" = .5
   }
 
-  return videoSpeed[id as keyof typeof videoSpeed]
+  return videoSpeed[id as keyof typeof videoSpeed] ?? 1;
 }
