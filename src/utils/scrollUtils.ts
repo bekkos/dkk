@@ -38,7 +38,8 @@ export const getVideoScrollLength = (id: string): number => {
 
 export const getVideoLoop = (id: string): number => {
   enum videoLoop {
-    "v4" = 0
+    "v0" = 0,
+    "v4" = 0,
   }
   return videoLoop[id as keyof typeof videoLoop] ?? 1;
 }

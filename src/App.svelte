@@ -14,6 +14,14 @@
     AOS.init()
   })
 
+  // IOS autplay required fix
+  document.body.onload = () => {
+    let videos = document.getElementsByTagName("video")
+    let videoArray = [...videos]
+    videoArray.forEach((video) => {
+      video.pause();
+    })
+  }
   
   // Scroll logic
   var t = 0;
