@@ -6,7 +6,7 @@
    // @ts-ignore
   import AOS from "aos";
   import { getVideoLoop, getVideoScrollLength, getVideoSpeed, interpolateVideoTime, playOnScroll } from "./utils/scrollUtils";
-  import { checkVisibleVideos } from "./utils/checkVisible";
+  import { checkIfAnchorIsVisible, checkVisibleVideos } from "./utils/checkVisible";
   import type { IActiveVideo } from "./interfaces";
   import Foreground from "./lib/Foreground.svelte";
 
@@ -27,23 +27,13 @@
   var t = 0;
   var page = 0;
   let activeVideos: IActiveVideo[] = []
+  let visibleAnchors: string[] = [];
   document.body.onscroll = () => {
-<<<<<<< HEAD
-    // TESTING
-    const scrollTop = window.scrollY;
-    const test = document.getElementById("anchor")?.getBoundingClientRect().top! + scrollTop!;
-    console.log("test t", test)
-    const t = Math.abs(document.body.getBoundingClientRect().top); 
-    const windowHeight = window.innerHeight; 
-    const documentHeight = 20000; 
-    
-    page = (t / (documentHeight - windowHeight)) * 100;
-    // console.log(page);
-=======
     t = Math.abs(document.body.getBoundingClientRect().top);
     page = t / 1000;
-    console.log(page);
->>>>>>> parent of 4ce74c5 (scroll attempt)
+    // console.log(page);
+
+    // Videos
     let visibleVideos = checkVisibleVideos();
     visibleVideos.forEach((video: HTMLVideoElement) => {
       video.pause();
@@ -65,12 +55,38 @@
       if(!activeVideo) return;
       playOnScroll(video, interpolateVideoTime(t, activeVideo!.video.duration, activeVideo!.scrollStart, activeVideo!.scrollEnd), getVideoSpeed(activeVideo!.video.id))
     })
+
+
+    // Anchors
+    let newVA: HTMLVideoElement[] = checkIfAnchorIsVisible();
+
+    if(newVA[0] && !visibleAnchors.includes(newVA[0].id)) {
+      visibleAnchors = [...visibleAnchors, newVA[0].id];
+      let updatedActiveVideo = {} as IActiveVideo;
+      if(!newVA[0].classList.contains("anchorBottom")) {
+        updatedActiveVideo = {
+          video: activeVideos[0].video,
+          scrollStart: t,
+          scrollEnd: t + getVideoScrollLength(activeVideos[0].video.id)
+        } as IActiveVideo;
+      } else {
+        updatedActiveVideo = {
+          video: activeVideos[0].video,
+          scrollStart: t - getVideoScrollLength(activeVideos[0].video.id),
+          scrollEnd: t
+        } as IActiveVideo;
+      }
+      activeVideos[0] = updatedActiveVideo;
+    } else {
+      visibleAnchors = [...visibleAnchors.splice(visibleAnchors.indexOf(newVA[0].id), 1)]
+    }
+
   }
 </script>
 
 <main>
   <Wrapper>
-    <Background page={page} />
+    <Background visibleAnchors={visibleAnchors} />
     <Foreground />
   </Wrapper>
 </main>

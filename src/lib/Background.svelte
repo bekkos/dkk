@@ -1,24 +1,43 @@
 <script defer>
-  export let page;
+  export let visibleAnchors;
+
+  let url = "";
+  
+  // Reactive statement to update id and url when visibleAnchors changes
+  $: {
+    const lastIndex = visibleAnchors.length - 1;
+    if (lastIndex >= 0) {
+      const id = visibleAnchors[lastIndex];
+      
+      // Update the url based on the id
+      switch(id) {
+        case "v0":
+          url = "./videos/u2air4.mp4";
+          break;
+        case "v3":
+          url = "./videos/r7_2.mp4";
+          break;
+        case "v8":
+          url = "./videos/soviet.mp4";
+          break;
+        case "v9":
+          url = "./videos/u2air3.mp4";
+          break;
+        default:
+          url = ""; // Set default if no match
+          break;
+      }
+    }
+  }
 </script>
 
-{#if page >= 0 && page < 15}
-  <video class="video" id="v0" src="./videos/u2air4.mp4" playsinline muted autoplay>
+{#if visibleAnchors.length > 0}
+  <video class="video videoPlayer" id={visibleAnchors[visibleAnchors.length - 1]} src={url} playsinline muted autoplay>
     <track kind="captions" />
   </video>
-  {:else if page >= 15 && page < 55}
-  <video class="video !w-[50%]" id="v3" src="./videos/r7_2.mp4" playsinline muted autoplay>
-    <track kind="captions" />
-  </video>
-  {:else if page >= 55}
-  <video class="video" id="v8" src="./videos/u2air3.mp4" playsinline muted autoplay>
-    <track kind="captions" />
-  </video>
-  {:else}
-  <div class="video">
-  </div>
+{:else}
+  <div class="video"></div>
 {/if}
-
 
 <style>
   * {
