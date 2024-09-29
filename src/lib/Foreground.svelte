@@ -1,17 +1,6 @@
 <script>
-  import { checkVisibleVideos } from "../utils/checkVisible";
-
-  let videos = checkVisibleVideos();
-  let videoArray = [...videos];
-  console.log("fromfg", videoArray)
-  videoArray.forEach(video => {
-    if(video.id == "v8" && video.currentTime < video.duration) {
-      video.classList.add("fixed");
-    } else {
-      video.classList.add("");
-    }
-  })
 </script>
+<block id="anchor" class="fixed top-0 left-0"></block>
 <section>
   <h2 class="mt-[50vh] sm:text-6xl md:text-8xl xs:px-[10vw] md:px-[25vw]">Bodø 1958 <small class="xs:text-base md:text-2xl"><br />Historien om en spionby og et fly som skulle endre verden.</small></h2>
   <div class="xs:px-[10vw] md:px-[25vw]">
@@ -77,11 +66,8 @@
     <p data-aos="fade-right" class="text-center mt-[40vh]">Pilotene får opptrening ved Homey Airport, ofte kalt Area 51.</p>
     <p data-aos="fade-left" class="text-center mt-[5vh]">Flyet omtales som et av de vanskeligste flyene å fly i verden, piloten må balansere flyets hastighet nøye. Litt for sakte og flyets vinger mister løftekraften, litt for raskt så går den smale flykroppen i oppløsning.</p>
   </div>
-  <div class="bg-[black] h-[150vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
-    <p data-aos="fade-right" class="text-center mt-[40vh] z-[1000] xs:px-[10vw] md:px-[25vw]">Syv år etter at Lockheeds ingeinører satte seg ved tegnebrettene letter en "Dragon Lady" eller som flyet offisielt heter "Lockheed U-2" fra en ukjent flyplass og rettet nesen mot den lille kystbyen i Norge.</p>
-    <video class="mt-[10vh] !w-[100vw] top-0 left-0" id="v8" src="./videos/u2air3.mp4" playsinline muted autoplay >
-      <track kind="captions" />
-    </video>
+  <div class="h-[150vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
+    <p data-aos="fade-right" class="text-center mt-[40vh] z-[1000] xs:px-[10vw] md:px-[25vw]">Syv år etter at Lockheeds ingeinører satte seg ved tegnebrettene letter en <block class="bg-[white] text-black font-normal">"Dragon Lady"</block> eller som flyet offisielt heter <block class="bg-[white] text-black font-normal">"Lockheed U-2"</block> fra en ukjent flyplass og rettet nesen mot den lille kystbyen i Norge.</p>
   </div>
 </section>
 

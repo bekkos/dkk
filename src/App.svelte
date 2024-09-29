@@ -29,12 +29,15 @@
   let activeVideos: IActiveVideo[] = []
   document.body.onscroll = () => {
     // TESTING
-    const t = window.scrollY || window.pageYOffset; 
+    const scrollTop = window.scrollY;
+    const test = document.getElementById("anchor")?.getBoundingClientRect().top! + scrollTop!;
+    console.log("test t", test)
+    const t = Math.abs(document.body.getBoundingClientRect().top); 
     const windowHeight = window.innerHeight; 
     const documentHeight = 20000; 
     
     page = (t / (documentHeight - windowHeight)) * 100;
-    console.log(page);
+    // console.log(page);
     let visibleVideos = checkVisibleVideos();
     visibleVideos.forEach((video: HTMLVideoElement) => {
       video.pause();

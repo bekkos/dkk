@@ -2,12 +2,16 @@
   export let page;
 </script>
 
-{#if page >= 0 && page < 3.8}
+{#if page >= 0 && page < 15}
   <video class="video" id="v0" src="./videos/u2air4.mp4" playsinline muted autoplay>
     <track kind="captions" />
   </video>
-  {:else if page >= 3.8}
+  {:else if page >= 15 && page < 55}
   <video class="video !w-[50%]" id="v3" src="./videos/r7_2.mp4" playsinline muted autoplay>
+    <track kind="captions" />
+  </video>
+  {:else if page >= 55}
+  <video class="video" id="v8" src="./videos/u2air3.mp4" playsinline muted autoplay>
     <track kind="captions" />
   </video>
   {:else}
