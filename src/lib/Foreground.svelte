@@ -28,7 +28,7 @@
     </video>
   </div>
   <div class=" h-[40vh] flex justify-start items-center flex-wrap flex-col !mt-[25vh] !pr-[0]">
-    <p data-aos="fade-right" class="text-right !pr-[0] bg-[black] text-white px-4">Soviet Unionen skryter av at de produserer R7 atomraketter som pølser på samlebånd.</p>
+    <p data-aos="fade-right" class="text-center !pr-[0] bg-[black] text-white px-4">Soviet Unionen skryter av at de produserer R7 atomraketter som pølser på samlebånd.</p>
   </div>
   <div class="bg-[black] h-[130vh] flex justify-start items-center flex-wrap flex-col !mt-[0] xs:px-[10vw] md:px-[25vw]">
     <p data-aos="fade-right" class="text-center text-3xl mt-[40vh] anchor anchorBottom" id="v3">Kan dette stemme?</p>
@@ -63,7 +63,7 @@
     <p data-aos="fade-left" class="text-center mt-[5vh]">Flyet omtales som et av de vanskeligste flyene å fly i verden, piloten må balansere flyets hastighet nøye. Litt for sakte og flyets vinger mister løftekraften, litt for raskt så går den smale flykroppen i oppløsning.</p>
   </div>
   <div class="h-[150vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
-    <p data-aos="fade-right" class="text-center mt-[40vh] z-[1000] xs:px-[10vw] md:px-[25vw]">Syv år etter at Lockheeds ingeinører satte seg ved tegnebrettene letter en <block class="bg-[white] text-black font-normal">"Dragon Lady"</block> eller som flyet offisielt heter <block class="bg-[white] text-black font-normal">"Lockheed U-2"</block> fra en ukjent flyplass og rettet nesen mot den lille kystbyen i Norge.</p>
+    <p data-aos="fade-right" class="text-center mt-[40vh] z-[1000] xs:px-[10vw] md:px-[25vw]">Syv år etter at Lockheeds ingeinører satte seg ved tegnebrettene letter en <block class="bg-[white] text-black font-normal">"Dragon Lady"</block> eller som flyet offisielt heter <block class="bg-[white] text-black font-normal">"Lockheed U-2"</block> fra en ukjent flyplass og retter nesen mot den lille kystbyen Bodø.</p>
   </div>
 </section>
 
