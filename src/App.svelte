@@ -13,6 +13,7 @@
   onMount(() => {
     AOS.init()
   })
+
   
   // Scroll logic
   var t = 0;
@@ -24,6 +25,7 @@
     console.log(page);
     let visibleVideos = checkVisibleVideos();
     visibleVideos.forEach((video: HTMLVideoElement) => {
+      video.pause();
       video.loop = getVideoLoop(video.id) == 1 ? true : false;
       let exists = activeVideos.find((x: IActiveVideo) => x.video.id == video.id);
       let activeVideo: IActiveVideo | null = null;

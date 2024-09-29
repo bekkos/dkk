@@ -13,7 +13,7 @@
   <div class="bg-[black] h-[120vh] !w-full flex justify-center items-center flex-wrap flex-row">
     <p data-aos="fade-right" class="mt-[25vh] text-center">60-tallet står om døren...</p>
     <p data-aos="fade-left" class="w-full text-center" data-aos-delay="500" style="float: right; margin-top: 10vh">...det er en tydelig etterkrigsoptimisme i verden.</p>
-    <video class="mt-12" id="v1" src="./videos/car_sticker2.mp4" playsinline>
+    <video class="mt-12" id="v1" src="./videos/car_sticker2.mp4" playsinline muted >
       <track kind="captions" />
     </video>
   </div>
@@ -23,7 +23,7 @@
   <div class="bg-[black] h-[130vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
     <p data-aos="fade-right" class="text-center">Dette er en helt ny type krigsføring. Ingen bomber, ingen skudd.</p>
     <p data-aos="fade-left" class="w-full text-center" data-aos-delay="500" style="float: right; margin-top: 10vh">Trusler, informasjon og innflytelse er det som gjelder.</p>
-    <video class="mt-12" id="v2" src="./videos/spy_stickers.mp4" playsinline>
+    <video class="mt-12" id="v2" src="./videos/spy_stickers.mp4" playsinline muted >
       <track kind="captions" />
     </video>
   </div>
@@ -39,7 +39,7 @@
   </div>
   <div class="bg-[black] h-[150vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
     <p data-aos="fade-right" class="text-center mt-[40vh]">President Eisenhower frykter et overraskelsesangrep så stort at USA ikke har evne til et tilsvarende motangrep.</p>
-    <video class="" id="v4" src="./videos/eisenhower.mp4" playsinline>
+    <video class="" id="v4" src="./videos/eisenhower.mp4" playsinline muted >
       <track kind="captions" />
     </video>
   </div>

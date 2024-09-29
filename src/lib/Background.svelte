@@ -3,11 +3,11 @@
 </script>
 
 {#if page >= 0 && page < 3.8}
-  <video class="video" id="v0" src="./videos/u2air3.mp4" playsinline>
+  <video class="video" id="v0" src="./videos/u2air3.mp4" playsinline muted >
     <track kind="captions" />
   </video>
   {:else if page >= 3.8}
-  <video class="video !w-[50%]" id="v3" src="./videos/r7_2.mp4" playsinline>
+  <video class="video !w-[50%]" id="v3" src="./videos/r7_2.mp4" playsinline muted >
     <track kind="captions" />
   </video>
   {:else}
