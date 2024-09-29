@@ -28,8 +28,12 @@
   var page = 0;
   let activeVideos: IActiveVideo[] = []
   document.body.onscroll = () => {
-    t = Math.abs(window.scrollY || window.pageYOffset);
-    page = t / 1000;
+    // TESTING
+    const t = window.scrollY || window.pageYOffset; 
+    const windowHeight = window.innerHeight; 
+    const documentHeight = 20000; 
+    
+    page = (t / (documentHeight - windowHeight)) * 100;
     console.log(page);
     let visibleVideos = checkVisibleVideos();
     visibleVideos.forEach((video: HTMLVideoElement) => {
