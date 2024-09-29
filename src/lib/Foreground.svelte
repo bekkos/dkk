@@ -1,26 +1,26 @@
 <script>
 </script>
 <section>
-  <h2 class="mt-[50vh] text-8xl">Bodø 1958 <small class="text-2xl"><br />Historien om en spionhovedstad.</small></h2>
-  <div>
+  <h2 class="mt-[50vh] sm:text-6xl md:text-8xl xs:px-[10vw] md:px-[25vw]">Bodø 1958 <small class="xs:text-base md:text-2xl"><br />Historien om en spionhovedstad.</small></h2>
+  <div class="xs:px-[10vw] md:px-[25vw]">
     <p data-aos="fade-right" >Det går rykter om mystiske "svarte fly" i luften over Bodø.</p>
     <p data-aos="fade-left" data-aos-delay="500" style="float: right; margin-top: 10vh">Ingen vet nøyaktig hva disse flyene er. Eller hva de gjør her.</p>
   </div>
-  <div>
+  <div class="xs:px-[10vw] md:px-[25vw]">
     <p data-aos="fade-right" >Hangar 4 på Bodø flyplass er helt avsperret, ingen kommer inn.</p>
     <p data-aos="fade-left" data-aos-delay="500" style="float: right; margin-top: 10vh">Hva er det egentlig som foregår i den lille kystbyen i Nord-Norge?</p>
   </div>
-  <div class="bg-[black] h-[120vh] !w-full flex justify-center items-center flex-wrap flex-row">
+  <div class="bg-[black] h-[120vh] !w-full flex justify-center items-center flex-wrap flex-row xs:px-[10vw] md:px-[25vw]">
     <p data-aos="fade-right" class="mt-[25vh] text-center">60-tallet står om døren...</p>
     <p data-aos="fade-left" class="w-full text-center" data-aos-delay="500" style="float: right; margin-top: 10vh">...det er en tydelig etterkrigsoptimisme i verden.</p>
     <video class="mt-12" id="v1" src="./videos/car_sticker2.mp4" playsinline muted autoplay >
       <track kind="captions" />
     </video>
   </div>
-  <div class="bg-[black] h-[75vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
+  <div class="bg-[black] h-[75vh] flex justify-start items-center flex-wrap flex-col !mt-[0] xs:px-[10vw] md:px-[25vw]">
     <p data-aos="fade-right" class="mt-[25vh] text-center">men, den kalde krigen ligger over Europa som et tykt snølag.</p>
   </div>
-  <div class="bg-[black] h-[130vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
+  <div class="bg-[black] h-[130vh] flex justify-start items-center flex-wrap flex-col !mt-[0] xs:px-[10vw] md:px-[25vw]">
     <p data-aos="fade-right" class="text-center">Dette er en helt ny type krigsføring. Ingen bomber, ingen skudd.</p>
     <p data-aos="fade-left" class="w-full text-center" data-aos-delay="500" style="float: right; margin-top: 10vh">Trusler, informasjon og innflytelse er det som gjelder.</p>
     <video class="mt-12" id="v2" src="./videos/spy_stickers.mp4" playsinline muted autoplay >
@@ -30,14 +30,14 @@
   <div class=" h-[40vh] flex justify-start items-center flex-wrap flex-col !mt-[25vh] !pr-[0]">
     <p data-aos="fade-right" class="text-right !pr-[0]">Soviet Unionen skryter av at de produserer R7 atomraketter som pølser på samlebånd.</p>
   </div>
-  <div class="bg-[black] h-[130vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
+  <div class="bg-[black] h-[130vh] flex justify-start items-center flex-wrap flex-col !mt-[0] xs:px-[10vw] md:px-[25vw]">
     <p data-aos="fade-right" class="text-center text-3xl mt-[40vh]">Kan dette stemme?</p>
   </div>
-  <div class="bg-[black] h-[65vh] flex justify-center items-center flex-wrap flex-col !mt-[0]">
+  <div class="bg-[black] h-[65vh] flex justify-center items-center flex-wrap flex-col !mt-[0] xs:px-[10vw] md:px-[25vw]">
     <p data-aos="fade-right" class="text-center">I USA vokser redselen. Hvis dette viser seg å være sant, ligger de dårlig an.</p>
     <img width="50%" data-aos="fade-left" class="mt-[10vh]"  src="./images/nuclear_warning.jpg" alt="">
   </div>
-  <div class="bg-[black] h-[150vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
+  <div class="bg-[black] h-[150vh] flex justify-start items-center flex-wrap flex-col !mt-[0] xs:px-[10vw] md:px-[25vw]">
     <p data-aos="fade-right" class="text-center mt-[40vh]">President Eisenhower frykter et overraskelsesangrep så stort at USA ikke har evne til et tilsvarende motangrep.</p>
     <video class="" id="v4" src="./videos/eisenhower.mp4" playsinline muted autoplay >
       <track kind="captions" />
@@ -58,16 +58,9 @@
     font-size: 2rem;
     font-weight: 100;
   }
-
-  section>h2 {
-    padding-left: 25vw;
-    padding-right: 25vw;
-  }
   div {
     width: 100%;
     font-size: 1.25rem;
     margin-top: 75vh;
-    padding-left: 25vw;
-    padding-right: 25vw;
   }
 </style>
