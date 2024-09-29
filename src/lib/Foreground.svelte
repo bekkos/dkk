@@ -2,7 +2,7 @@
 </script>
 <block id="anchor" class="fixed top-0 left-0"></block>
 <section>
-  <h2 class="mt-[50vh] sm:text-6xl md:text-8xl xs:px-[10vw] md:px-[25vw]">Bodø 1958 <small class="xs:text-base md:text-2xl"><br />Historien om en spionby og et fly som skulle endre verden.</small></h2>
+  <h2 class="mt-[50vh] sm:text-6xl md:text-8xl xs:px-[10vw] md:px-[25vw]">Bodø 1958 <small class="xs:text-base md:text-2xl"><br />Historien om en spionhovedstad.</small></h2>
   <div class="xs:px-[10vw] md:px-[25vw]">
     <p data-aos="fade-right" >Det går rykter om mystiske "svarte fly" i luften over Bodø.</p>
     <p data-aos="fade-left" data-aos-delay="500" style="float: right; margin-top: 10vh">Ingen vet nøyaktig hva disse flyene er. Eller hva de gjør her.</p>
@@ -44,6 +44,7 @@
       <track kind="captions" />
     </video>
   </div>
+<<<<<<< HEAD
   <div class="bg-black h-[100vh] flex justify-start items-center flex-wrap flex-row !mt-[0] xs:px-[10vw] md:px-[25vw]">
     <p data-aos="fade-down" class="text-center mt-[40vh]">Soviet Unionens luftrom har lenge vært helt utilgjengelig. Alt av fly ville blitt skutt ned av luftvern.</p>
     <video class="!w-[100vw] mt-[10vh]" id="v5" src="./videos/soviet.mp4" playsinline muted autoplay >
@@ -69,6 +70,8 @@
   <div class="h-[150vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
     <p data-aos="fade-right" class="text-center mt-[40vh] z-[1000] xs:px-[10vw] md:px-[25vw]">Syv år etter at Lockheeds ingeinører satte seg ved tegnebrettene letter en <block class="bg-[white] text-black font-normal">"Dragon Lady"</block> eller som flyet offisielt heter <block class="bg-[white] text-black font-normal">"Lockheed U-2"</block> fra en ukjent flyplass og rettet nesen mot den lille kystbyen i Norge.</p>
   </div>
+=======
+>>>>>>> parent of 4ce74c5 (scroll attempt)
 </section>
 
 <style>

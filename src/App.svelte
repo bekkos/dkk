@@ -28,6 +28,7 @@
   var page = 0;
   let activeVideos: IActiveVideo[] = []
   document.body.onscroll = () => {
+<<<<<<< HEAD
     // TESTING
     const scrollTop = window.scrollY;
     const test = document.getElementById("anchor")?.getBoundingClientRect().top! + scrollTop!;
@@ -38,6 +39,11 @@
     
     page = (t / (documentHeight - windowHeight)) * 100;
     // console.log(page);
+=======
+    t = Math.abs(document.body.getBoundingClientRect().top);
+    page = t / 1000;
+    console.log(page);
+>>>>>>> parent of 4ce74c5 (scroll attempt)
     let visibleVideos = checkVisibleVideos();
     visibleVideos.forEach((video: HTMLVideoElement) => {
       video.pause();
