@@ -1,7 +1,19 @@
 <script>
+  import { checkVisibleVideos } from "../utils/checkVisible";
+
+  let videos = checkVisibleVideos();
+  let videoArray = [...videos];
+  console.log("fromfg", videoArray)
+  videoArray.forEach(video => {
+    if(video.id == "v8" && video.currentTime < video.duration) {
+      video.classList.add("fixed");
+    } else {
+      video.classList.add("");
+    }
+  })
 </script>
 <section>
-  <h2 class="mt-[50vh] sm:text-6xl md:text-8xl xs:px-[10vw] md:px-[25vw]">Bodø 1958 <small class="xs:text-base md:text-2xl"><br />Historien om en spionhovedstad.</small></h2>
+  <h2 class="mt-[50vh] sm:text-6xl md:text-8xl xs:px-[10vw] md:px-[25vw]">Bodø 1958 <small class="xs:text-base md:text-2xl"><br />Historien om en spionby og et fly som skulle endre verden.</small></h2>
   <div class="xs:px-[10vw] md:px-[25vw]">
     <p data-aos="fade-right" >Det går rykter om mystiske "svarte fly" i luften over Bodø.</p>
     <p data-aos="fade-left" data-aos-delay="500" style="float: right; margin-top: 10vh">Ingen vet nøyaktig hva disse flyene er. Eller hva de gjør her.</p>
@@ -40,6 +52,34 @@
   <div class="bg-[black] h-[150vh] flex justify-start items-center flex-wrap flex-col !mt-[0] xs:px-[10vw] md:px-[25vw]">
     <p data-aos="fade-right" class="text-center mt-[40vh]">President Eisenhower frykter et overraskelsesangrep så stort at USA ikke har evne til et tilsvarende motangrep.</p>
     <video class="" id="v4" src="./videos/eisenhower.mp4" playsinline muted autoplay >
+      <track kind="captions" />
+    </video>
+  </div>
+  <div class="bg-black h-[100vh] flex justify-start items-center flex-wrap flex-row !mt-[0] xs:px-[10vw] md:px-[25vw]">
+    <p data-aos="fade-down" class="text-center mt-[40vh]">Soviet Unionens luftrom har lenge vært helt utilgjengelig. Alt av fly ville blitt skutt ned av luftvern.</p>
+    <video class="!w-[100vw] mt-[10vh]" id="v5" src="./videos/soviet.mp4" playsinline muted autoplay >
+      <track kind="captions" />
+    </video>
+  </div>
+  <div class="bg-[black] h-[150vh] flex justify-start items-center flex-wrap flex-col !mt-[0] xs:px-[10vw] md:px-[25vw]">
+    <p data-aos="fade-right" class="text-center mt-[40vh]">En av USA's største flyprodusenter Lockheed sin utviklingavdeling "Skunk Works" får i topp hemmelig oppdrag å utvikle og produsere et fly som kan fly så høyt og så fort at ingen luftvernsmissiler eller jagerfly kan skyte det ned.</p>
+    <video class="" id="v6" src="./videos/skunks.mp4" playsinline muted autoplay >
+      <track kind="captions" />
+    </video>
+  </div>
+  <div class="bg-[black] h-[150vh] flex justify-start items-center flex-wrap flex-col !mt-[0] xs:px-[10vw] md:px-[25vw]">
+    <p data-aos="fade-right" class="text-center mt-[40vh]">Prosjektet får kallenavnet "AQUATONE"</p>
+    <video class="mt-[10vh]" id="v7" src="./videos/aquatone.mp4" playsinline muted autoplay >
+      <track kind="captions" />
+    </video>
+  </div>
+  <div class="bg-[black] h-[150vh] flex justify-start items-center flex-wrap flex-col !mt-[0] xs:px-[10vw] md:px-[25vw]">
+    <p data-aos="fade-right" class="text-center mt-[40vh]">Pilotene får opptrening ved Homey Airport, ofte kalt Area 51.</p>
+    <p data-aos="fade-left" class="text-center mt-[5vh]">Flyet omtales som et av de vanskeligste flyene å fly i verden, piloten må balansere flyets hastighet nøye. Litt for sakte og flyets vinger mister løftekraften, litt for raskt så går den smale flykroppen i oppløsning.</p>
+  </div>
+  <div class="bg-[black] h-[150vh] flex justify-start items-center flex-wrap flex-col !mt-[0]">
+    <p data-aos="fade-right" class="text-center mt-[40vh] z-[1000] xs:px-[10vw] md:px-[25vw]">Syv år etter at Lockheeds ingeinører satte seg ved tegnebrettene letter en "Dragon Lady" eller som flyet offisielt heter "Lockheed U-2" fra en ukjent flyplass og rettet nesen mot den lille kystbyen i Norge.</p>
+    <video class="mt-[10vh] !w-[100vw] top-0 left-0" id="v8" src="./videos/u2air3.mp4" playsinline muted autoplay >
       <track kind="captions" />
     </video>
   </div>

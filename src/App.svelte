@@ -28,7 +28,7 @@
   var page = 0;
   let activeVideos: IActiveVideo[] = []
   document.body.onscroll = () => {
-    t = Math.abs(document.body.getBoundingClientRect().top);
+    t = Math.abs(window.scrollY || window.pageYOffset);
     page = t / 1000;
     console.log(page);
     let visibleVideos = checkVisibleVideos();
